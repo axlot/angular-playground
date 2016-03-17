@@ -1,0 +1,20 @@
+<pre>Sorting predicate = {{predicate}}; reverse = {{reverse}}</pre>
+<table class="table">
+  <thead>
+  <th ng-click="order('pos')">#
+      <order-toggle order="pos" predicate="predicate" reverse="reverse"></order-toggle>
+  </th>
+  <th>Club</th><th>Puntos</th>
+  <th ng-click="order('j')">P
+      <order-toggle order="j" predicate="predicate" reverse="reverse"></order-toggle>
+  </th>
+  <th  ng-click="order('g')">G
+    <order-toggle order="g" predicate="predicate" reverse="reverse"></order-toggle>
+  </th><th ng-click="order('e')">E<order-toggle order="e" predicate="predicate" reverse="reverse"></order-toggle></th><th ng-click="order('p')">P
+      <order-toggle order="p" predicate="predicate" reverse="reverse"></order-toggle></th></thead>
+  <tbod>
+      <tr ng-repeat="club in clubes">
+          <td>{{club.pos}}</td><td>{{club.nombre}}</td><td>{{club.puntos}}</td><td>{{club.j}}</td><td>{{club.g}}</td><td>{{club.e}}</td><td>{{club.p}}</td>
+      </tr>
+  </tbod>
+</table>
